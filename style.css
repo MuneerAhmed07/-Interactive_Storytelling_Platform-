@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Reusable style */
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    background-color: brown;
+    color: #fff;
+    display: inline-block;
+    padding: 16px 38px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+p {
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+/* Home page */
+
+#main {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.home_container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('img/banner_1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    text-align: center;
+}
+
+.home_container .content h1 {
+    font-size: 70px;
+    color: #fff;
+}
+
+.start_button {
+    background: green;
+    margin: 40px;
+}
+
+/* start section */
+.start_container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('img/banner_2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    color: #fff;
+}
+
+.start_content {
+    width: 70%;
+}
+
+.start_content p {
+    margin-bottom: 20px;
+}
+
+.start_content a {
+    font-size: 18px;
+    display: inline-block;
+    background-color: brown;
+    color: #fff;
+    padding: 8px 28px;
+    margin-top: 30px;
+}
+
+/* Map CSS */
+
+.map_container {
+    background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('img/banner_3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+
+.map_content {
+    width: 70%;
+    color: #fff;
+}
+
+.map_content h2 {
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.btn_sec {
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.btn_sec a {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Early Page CSS */
+
+.early_container {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('img/dark_jungle.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.early_container .content {
+    position: relative;
+    width: 70%;
+    background-color: rgb(202, 228, 17);
+    box-shadow: -4px -8px 16px rgba(0,0,0,.9);
+    padding: 60px 40px 40px 40px;
+    text-align: center;
+}
+
+.early_container h2 {
+    margin-top: 30px;
+    font-size: 45px;
+    font-family: cursive;
+    color: #fff;
+}
+
+.early_container p {
+    font-size: 25px;
+}
+
+.early_container img {
+    position: absolute;
+    top: -20px;
+    left: -160px;
+    width: 300px;
+    transform: rotate(-30deg);
+}
+
+
+/* Story Page Start */
+
+.start_story {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('img/story_banner_1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.s_btn {
+    font-size: 18px;
+    outline: none;
+    border: none;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.start_story .start_story_content,
+.Alies_container .alies_content,
+.treasure_location .treasure_content {
+    width: 80%;
+}
+
+.start_story_content h1,
+.Alies_container h1 {
+    font-size: 90px;
+    font-family: cursive;
+    margin-bottom: 40px;
+}
+
+.start_story_content p,
+.alies_content p,
+.treasure_content p,
+.final_content p{
+    font-size: 20px;
+    width: 80%;
+}
+
+.start_story_content .face_ch {
+    margin-top: 20px;
+    display: none;
+}
+
+.start_story_content .face_ch.fac_active {
+    display: inline-block;
+}
+
+/* Alies Section  */
+
+.Alies_container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url('img/help_alies.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    justify-content: center;
+}
+
+.alies_content h2 {
+    font-size: 40px;
+    font-family: cursive;
+    margin-top: 20px;
+}
+
+.accept_para, .decline_para {
+    display: none;
+    margin-top: 20px;
+}
+
+.accept_para.accept_active,
+.decline_para.decline_active {
+    display: inline-block;
+}
+
+/* treasure_location CSS */
+
+.treasure_location {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('img/story_banner_2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.treasure_location .treasure_content h1,
+.final_content h1,
+.final_act_content h1 {
+    font-size: 70px;
+    font-family: cursive;
+    margin-bottom: 40px;
+}
+
+.trap_para, .proceed_para {
+    display: none;
+    margin-top: 20px;
+}
+
+.trap_para.trap_active,
+.proceed_para.proceed_active {
+    display: inline-block;
+}
+
+/* Final Decision */
+
+.final_container {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;    
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('img/story_banner_4.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.final_content,
+.final_act_content {
+    width: 80%;
+}
+
+.continue_alone_para, .taking_alies_para {
+    display: none;
+    margin-top: 20px;
+}
+
+.continue_alone_para.continue_active,
+.taking_alies_para.alies_active {
+    display: inline-block;
+}
+
+/* final Act container */
+
+.final_act_container {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('img/story_banner_5.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.final_act_content p {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.final_act_content a {
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 20px;
+}
